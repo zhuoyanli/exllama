@@ -1,10 +1,10 @@
+import os
+import sys
+
 # from abc import ABC
 import torch
 from torch.cuda.amp import custom_bwd, custom_fwd
 from torch.utils.cpp_extension import load
-import os
-import sys
-import platform
 
 library_dir = os.path.dirname(os.path.abspath(__file__))
 extension_name = "exllama_ext"

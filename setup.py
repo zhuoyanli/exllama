@@ -22,6 +22,7 @@ setup(
     ],
     packages=find_packages("."),
     package_dir={"": "."},
+    package_data={"exllama": ["exllama_ext/*", "exllama_ext/cpu_func/*", "exllama_ext/cuda_func/*"]},
     long_description=readme,
     long_description_content_type="text/markdown",
 )

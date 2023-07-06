@@ -1,8 +1,10 @@
-import cuda_ext
-from model import ExLlama, ExLlamaCache
-from lora import ExLlamaLora
 import torch
 import torch.nn.functional as F
+
+from . import cuda_ext
+from .model import ExLlama, ExLlamaCache
+from .lora import ExLlamaLora
+
 
 class ExLlamaGenerator:
 

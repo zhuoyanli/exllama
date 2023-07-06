@@ -4,15 +4,16 @@ if sys.version_info < min_version:
     print("")
     print(f" ## Warning: this project requires Python {min_version[0]}.{min_version[1]} or higher.")
     print("")
+import json
+import math
+from enum import Enum
 
 import torch
 from torch import nn
 import torch.nn.functional as F
 from safetensors import safe_open
-import cuda_ext
-import json
-import math
-from enum import Enum
+
+from . import cuda_ext
 
 class ParsedEnum(Enum):
 

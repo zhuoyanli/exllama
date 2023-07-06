@@ -1,8 +1,11 @@
-from model import ExLlamaConfig, Ex4bitLinear
-import torch
 import json
-from safetensors.torch import load_file as safe_load_file
+
+import torch
 from torch import load as load_file
+from safetensors.torch import load_file as safe_load_file
+
+from .model import ExLlamaConfig, Ex4bitLinear
+
 
 class ExLlamaLora:
 
